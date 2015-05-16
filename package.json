@@ -37,7 +37,6 @@
     "glob": "^5.0.6",
     "gulp": "^3.8.11",
     "gulp-chain": "^1.0.0",
-    "submerge": "^1.0.4",
-    "through2": "^0.6.5"
+    "submerge": "^1.0.4"
   }
 }
