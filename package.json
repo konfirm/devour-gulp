@@ -1,0 +1,42 @@
+{
+  "name": "devour",
+  "version": "0.0.0",
+  "description": "Wrapper for gulp projects to provide a lot of syntactic sugar and re-use",
+  "main": "lib/devour.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konfirm/devour-gulp.git"
+  },
+  "bin": {
+    "devour": "./bin/devour.js",
+    "gulp": "./bin/gulp.js"
+  },
+  "keywords": [
+    "gulp",
+    "project",
+    "tasks",
+    "pipes"
+  ],
+  "author": "Rogier Spieker",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/konfirm/devour-gulp/issues"
+  },
+  "homepage": "https://github.com/konfirm/devour-gulp",
+  "devDependencies": {
+    "code": "^1.4.0",
+    "coveralls": "^2.11.2",
+    "lab": "^5.8.1",
+    "nsp": "^1.0.1"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "glob": "^5.0.6",
+    "gulp": "^3.8.11",
+    "submerge": "^1.0.4",
+    "through2": "^0.6.5"
+  }
+}
