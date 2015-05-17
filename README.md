@@ -13,6 +13,17 @@ All of the files will be loaded when `devour` is activated, then you specify whi
 ## Usage
 As `devour` is designed to incorporate `gulp`, you simply include it in your (existing) `gulpfile.js`, it will not get in the way of your current tasks (as long as there are no task-name collisions, of course).
 
+### Starting
+Devour installs two cli commands; `devour` and `gulp`. Both of these will start Devour (although the `gulp` command will inform you it was devoured).
+As with gulp itself, you can specify which tasks to run by providing them on the command line, for example:
+```
+devour myTask myOtherTask mySpecialTask
+```
+
+Will try to start (in order) `myTask`, `myOtherTask`, `mySpecialTask`. Whichever ones are found to be actual tasks are executed, feedback is provided on which tasks are running and which were not found.
+The provided tasks will only run once, and once all are done, Devour will exit.
+_NOTE:_ when running specific tasks, the verbosity is set to `false` in order to reduce the output.
+
 ### `gulpfile.js`
 As `devour` is based on the concept of moving tasks into separate files, you (should) end up with a very clean `gulpfile.js`.
 
