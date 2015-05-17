@@ -1,4 +1,6 @@
-# devour
+[![npm version](https://badge.fury.io/js/devour.svg)](http://badge.fury.io/js/devour)
+
+# Devour
 Wrapper for gulp projects to provide a lot of syntactic sugar and re-use
 
 ## Install
