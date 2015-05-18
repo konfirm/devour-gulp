@@ -22,9 +22,10 @@ Devour initialized
 ## `.gulp`
 If you need to access the `gulp` instance under the hood, you can by using `devour.gulp`. It truly is gulp itself you can use it to configure manual tasks.
 
-## `.task(string name, array build [, array watch])`
+## `.task(string name [, string|array build [, string|array|bool watch]])`
 Schedules a task (loaded from the `gulp/task`-directory) to run on the set of files in `build`, the `watch` parameter is optional, if omitted the watch-list will be equal to the build-list. If there should be no watch configured, pass on (bool) `false`.
-Any task can be directly invoked from the command line, just like when using `gulp` itself (note, if the watch is explicitly disabled, the only way to make the task run is by calling it from the commandline or by calling `.start()` after scheduling your tasks).
+If no `build` is provide, the task will be run, but (suprisingly) the stream will not be available (for consistency the argument is still the same).
+Any task can be directly invoked from the command line, just like when using `gulp` itself (note, if the watch is explicitly disabled, the only way to make the task run is by calling it from the commandline).
 Each configured task will inform you about the way it was scheduled, for example:
 ```
 Task <name> activated
@@ -33,7 +34,7 @@ Task <name> activated
 ```
 
 ## `.start()`
-If you want to register the scheduled tasks to the `'default'` task, you can do so by calling `.start()`. If running from the commandline with a specified task, just like `gulp` the default task will be skipped.
+Executing the `start` method will take of adding a default task (if none were defined) and starting it. If running from the commandline with a specified task, just like `gulp` the default task will be skipped.
 
 ## `.source(mixed path)`
 Basically being `gulp.src`, the `.source` method accepts the same arguments. What it does more is that it will pipe the source list through the default pipe.
@@ -57,6 +58,6 @@ The equivalent of `gulp.dest`, meaning it will stream the contents into the file
 ## `.min(object file)`
 A small courtesy function which takes a file object and cleans up any existing `.min` or `.prep` from the filename before ensuring the `.min` at the beginning of the extension.
 
-## Further reading
-- [The API](documentation/api.md)
+<!-- ## Further reading -->
+<!-- - [Writing a task](write-task.md) -->
 <!-- - [Getting Started](documentation/getting-started.md) -->
