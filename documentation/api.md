@@ -51,8 +51,8 @@ var output = devour.config('output'),  //  'dist' by default
 	myDefault = devour.config('unknown', 'hello world');  //  'unknown' does not exist, returns 'hello world'
 ```
 
-## `.write([string relative [, object options ]])`
-The equivalent of `gulp.dest`, meaning it will stream the contents into the file at hand. The optional (string) `relative` allows to indicate a path relative to the configured `output` path. The optional (object) `options` is passed along the write stream, so you can speficy the file mode or whether or not to read the stream.
+## `.write([string path [, object options ]])`
+The equivalent of `gulp.dest`, meaning it will stream the contents into the file at hand. The optional (string) `relative` allows to indicate a path (either absolute or relative to the configured `output` path). The optional (object) `options` is passed along the write stream, so you can speficy the file mode or whether or not to read the stream.
 
 ## `.min(object file)`
 A small courtesy function which takes a file object and cleans up any existing `.min` or `.prep` from the filename before ensuring the `.min` at the beginning of the extension.
