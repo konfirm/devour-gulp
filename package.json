@@ -36,7 +36,7 @@
     "chalk": "^1.0.0",
     "glob": "^5.0.6",
     "gulp": "^3.8.11",
-    "gulp-chain": "^1.0.0",
+    "gulp-chain": "^1.0.1",
     "polymorphic": "^1.2.4",
     "submerge": "^1.0.4"
   }
