@@ -35,9 +35,9 @@
   "dependencies": {
     "chalk": "^1.0.0",
     "glob": "^5.0.10",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.0",
     "gulp-chain": "^1.0.1",
-    "polymorphic": "^1.2.5",
-    "submerge": "^1.0.7"
+    "polymorphic": "^1.2.7",
+    "submerge": "^1.0.8"
   }
 }

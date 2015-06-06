@@ -161,5 +161,6 @@ You may also have noticed that there are no requires for the `gulp-<plugins>`, t
 - [The API](documentation/api.md)
 <!-- - [Getting Started](documentation/getting-started.md) -->
 
+
 ## License
-GPLv2 © [Konfirm](https://konfirm.eu)
+GPLv2 © [Konfirm ![Open](https://kon.fm/open.svg)](//kon.fm/site)
