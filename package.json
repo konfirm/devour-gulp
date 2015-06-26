@@ -34,10 +34,13 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
+    "code": "^1.4.1",
     "glob": "^5.0.10",
     "gulp": "^3.9.0",
-    "gulp-chain": "^1.0.1",
+    "gulp-chain": "^1.0.2",
     "gulp-watch": "^4.2.4",
+    "lab": "^5.11.1",
+    "nsp": "^1.0.3",
     "polymorphic": "^1.2.7",
     "submerge": "^1.0.8"
   }
