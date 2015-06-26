@@ -37,6 +37,7 @@
     "glob": "^5.0.10",
     "gulp": "^3.9.0",
     "gulp-chain": "^1.0.1",
+    "gulp-watch": "^4.2.4",
     "polymorphic": "^1.2.7",
     "submerge": "^1.0.8"
   }
