@@ -27,21 +27,18 @@
   },
   "homepage": "https://github.com/konfirm/devour-gulp",
   "devDependencies": {
-    "code": "^1.4.0",
-    "coveralls": "^2.11.2",
-    "lab": "^5.9.0",
-    "nsp": "^1.0.1"
+    "code": "^1.4.1",
+    "coveralls": "^2.11.3",
+    "lab": "^5.13.0",
+    "nsp": "^1.0.3"
   },
   "dependencies": {
-    "chalk": "^1.0.0",
-    "code": "^1.4.1",
-    "glob": "^5.0.10",
+    "chalk": "^1.1.0",
+    "glob": "^5.0.14",
     "gulp": "^3.9.0",
-    "gulp-chain": "^1.0.2",
-    "gulp-watch": "^4.2.4",
-    "lab": "^5.11.1",
-    "nsp": "^1.0.3",
-    "polymorphic": "^1.2.7",
-    "submerge": "^1.0.8"
+    "gulp-chain": "^1.0.3",
+    "gulp-watch": "^4.3.3",
+    "polymorphic": "^1.2.8",
+    "submerge": "^1.0.9"
   }
 }
